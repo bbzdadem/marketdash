@@ -1,0 +1,115 @@
+.navbar {
+    background-color: #ffc244 !important;
+}
+
+.navbar a {
+    color: black !important;
+    font-weight: 600;
+    font-size: 18px;
+
+}
+
+.body  {
+    display: flex;
+}
+
+.sidebar {
+    width: 25%;
+    background-color: #2abb9b;
+    height: 100vh;
+}
+
+.admin_det {
+    margin-top: 25px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+#addmehsul {
+    align-items: center;
+    margin-left: 25%;
+    padding: auto;
+    width: 45%;
+}
+
+button {
+    border: none;
+    border-radius: 16px !important;
+}
+
+.mehsullar {
+    width: 75%;
+    height: 100vh;
+    background-color: aliceblue;
+}
+
+
+.productrow {
+    margin: 25px 5% 25px 5%;
+}
+
+.product_descr {
+    border: 2px solid #2abb9b;
+    border-radius: 40px;
+    padding: 6px 6px 6px 6px;
+    margin-bottom: 12px;
+}
+
+#search {
+    margin-left: 10%;
+}
+
+#editmehsul {
+    width: 90%;
+    margin-left: 3%;
+    background-color: #ffc244 !important;
+    font-weight: 600;
+    margin-right: 3%;
+}
+
+.product_name {
+    color: #2abb9b;
+}
+
+.product_price {
+    color:crimson
+}
+
+.productbody {
+    margin-left: 4%;
+}
+
+.product_img {
+    width: 100%;
+    border-radius: 40px;
+    margin-left: -2%;
+}
+
+p {
+    text-align: center;
+    font-size: 18px;
+    margin: auto;
+    font-weight: 600;
+}
+
+
+input {
+    width: 80%;
+    height: 40px;
+    border-radius: 30px;
+    border: 2px solid #2abb9b;
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+
+input:focus {
+    outline: none;
+}
+
+.product_category {
+    font-size: 12px;
+}
+
+.product_description {
+    font-size: 14px;
+}

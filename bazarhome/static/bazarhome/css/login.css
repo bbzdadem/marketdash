@@ -1,0 +1,173 @@
+body {
+    background-color: #ffc244 ;
+    width: 100%;
+}
+
+.login {
+    margin: auto;
+    padding: auto;
+    width: 40%;
+    height: 66%;
+    background-color: aliceblue;
+    align-items: center;
+    margin-top: 10%;
+    border-radius: 40px;
+    box-shadow: 5px 10px #888888;
+}
+
+.box {
+    margin: auto;
+    width: 80%;
+    padding: auto;
+    padding-top: 15vh;
+}
+
+.registerbox {
+    margin: auto;
+    width: 80%;
+    padding: auto;
+    padding-top: 6vh;
+}
+
+
+.logintext {
+    color: #2abb9b;
+    font-size: 46px;
+    font-weight: bold;
+}
+
+.logintypes {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+
+.customertype {
+    font-size: 14px;
+    width: 20%;
+    height: 40px;
+    background: #2abb9b;
+    padding: 10px;
+    text-align: center;
+    border-radius: 15px;
+    color: white;
+    font-weight: bold;
+    line-height: 25px;
+    text-decoration: none;
+    cursor: pointer;
+    margin-right: 25px;
+}
+
+.customertype:hover {
+    font-size: 14px;
+    width: 20%;
+    height: 40px;
+    background: #ffc244;
+    padding: 10px;
+    text-align: center;
+    border-radius: 15px;
+    color: white;
+    font-weight: bold;
+    line-height: 25px;
+    text-decoration: none;
+    cursor: pointer;
+    
+}
+
+.admintype {
+    font-size: 14px;
+    width: 20%;
+    height: 40px;
+    background: #ffc244;
+    padding: 10px;
+    text-align: center;
+    border-radius: 15px;
+    color: white;
+    font-weight: bold;
+    line-height: 25px;
+    text-decoration: none;
+    cursor: pointer;
+    margin-right: 25px;
+}
+
+.admintype:hover {
+    font-size: 14px;
+    width: 20%;
+    height: 40px;
+    background: #2abb9b;
+    padding: 10px;
+    text-align: center;
+    border-radius: 15px;
+    color: white;
+    font-weight: bold;
+    line-height: 25px;
+    text-decoration: none;
+    cursor: pointer;
+    
+}
+
+.loginbox {
+    margin: auto;
+    width: 80%;
+    padding: auto;
+    padding-top: 25vh;
+    display: block;
+}
+
+.input {
+    width: 80%;
+    height: 40px;
+    border-radius: 30px;
+    border: 2px solid #2abb9b;
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+
+input:focus {
+    outline: none;
+}
+
+.loginbutton {
+    width: 30%;
+    height: 35px;
+    border-radius: 30px;
+    background-color: #ffc244;
+    color: white;
+    font-weight: 550;
+    border: none;
+}
+
+.loginbutton:hover {
+    width: 30%;
+    height: 35px;
+    border-radius: 30px;
+    background-color: #ffffff;
+    color: #2abb9b;
+    font-weight: 550;
+    border: 3px solid #ffc244;
+}
+
+button:focus {
+    outline: none;
+}
+
+
+.createacc {
+    font-size: 14px;
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+.goback {
+    margin-left: 50px;
+    padding-top: 50px;
+    border: none;
+    background-color: transparent;
+    font-size: 18px;
+    font-weight: 550;
+    text-decoration: none;
+}
+

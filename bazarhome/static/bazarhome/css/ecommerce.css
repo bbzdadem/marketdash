@@ -1,0 +1,327 @@
+@charset "utf-8";
+/* Global Styles */
+a:hover {
+	color: rgba(255,255,255,1.00);
+}
+
+
+header {
+	font-family: 'Montserrat', sans-serif;
+	color: rgba(146,146,146,1.00);
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+}
+#logo {
+	float: left;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	width: 139px;
+	text-align: center;
+	color: rgba(255,255,255,1.00);
+}
+#headerLinks {
+	float: left;
+	width: calc( 100% - 139px );
+	text-align: right;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-color: rgba(255,255,255,1.00);
+	
+}
+
+h1 {
+	margin: none;
+	padding: none;
+}
+#headerLinks a {
+	text-decoration: none;
+	color: #2abb9b;
+	padding-left: 66px;
+    font-size: 24px;
+    font-weight: 600;
+}
+#offer {
+	font-family: 'Montserrat', sans-serif;
+	clear: both;
+	background-color: #ffc244;
+	color: #2abb9b;
+	padding-left: 115px;
+	padding-top: 57px;
+	padding-bottom: 57px;
+}
+#content {
+	clear: both;
+	overflow: auto;
+	padding-top: 29px;
+}
+#content .sidebar {
+	font-family: 'Montserrat', sans-serif;
+	color:  #2abb9b;
+	float: left;
+	width: 20%;
+	padding-left: 3%;
+	padding-right: 3%;
+	text-align: center;
+	background-color: #ffc244;
+	padding-top: 36px;
+	height: 784px;
+}
+#content .mainContent {
+	float: left;
+	width: 70%;
+	text-align: center;
+    padding-left: 4%;
+}
+#content .sidebar #menubar {
+	text-align: left;
+	color:  white;
+	position: relative;
+	left: 0%;
+}
+
+#search:focus {
+    outline: none;
+}
+
+button {
+    border: none;
+}
+.show-cart li {
+    display: flex;
+}
+
+#content .sidebar #search {
+	width: 100%;
+    border-radius: 30px;
+    border: 3px dashed #2abb9b;
+	height: 42px;
+	text-align: center;
+	color: rgba(208,207,207,1.00);
+	font-size: 14px;
+	margin-bottom: 21px;
+}
+#mainWrapper {
+	width: 80%;
+	padding-left: 10%;
+}
+.menu ul li {
+	list-style-type: none;
+	font-size: x-large;
+	position: relative;
+	left: -35px;
+	padding-top: 12px;
+}
+#content .mainContent .productRow {
+	overflow: auto;
+	color:white;
+}
+.mainContent .productRow .productInfo {
+	float: left;
+	padding-right: 4%;
+	padding-left: 4%;
+	width: 23%;
+	margin: 1%;
+}
+.productRow .productInfo .price {
+	font-family: 'Montserrat', sans-serif;
+	color: black;
+	font-size: 22px;
+	position: relative;
+	top: -20px;
+}
+.productRow .productInfo .productContent {
+	position: relative;
+	top: -37px;
+	font-size: 14px;
+	font-family: source-sans-pro, sans-serif;
+	font-style: normal;
+	font-weight: 200;
+	color: black;
+	white-space: pre-wrap;
+}
+
+.productRow .productInfo .sale {
+	position: relative;
+	font-size: 14px;
+	font-family: source-sans-pro, sans-serif;
+	font-style: normal;
+	font-weight: 600;
+	color: red;
+	white-space: pre-wrap;
+}
+
+.productRow .productInfo .buyButton {
+	position: relative;
+	top: -48px;
+	width: 84%;
+	background-color: #2abb9b;
+	height: 35px;
+	color: rgba(255,255,255,1.00);
+	border-style: none;
+	font-size: 14px;
+	margin-top: 8px;
+}
+#mainWrapper footer {
+	clear: both;
+	overflow: auto;
+	background-color: #ffc244;
+	font-family: source-sans-pro, sans-serif;
+	font-style: normal;
+	font-weight: 200;
+	line-height: 1.8;
+	padding-top: 22px;
+	padding-left: 22px;
+	text-align: center;
+	padding-bottom: 22px;
+	padding-right: 22px;
+}
+.productInfo div img {
+	width: 100%;
+}
+.sidebar #menubar .menu ul li a {
+	color: white;
+	text-decoration: none;
+}
+.sidebar #menubar .menu ul li a:hover {
+	color: rgba(107,97,97,1.00);
+	text-decoration: none;
+}
+#menubar .menu h2 {
+	font-size: 20px;
+}
+#menubar .menu ul li a {
+	font-size: 16px;
+}
+.sidebar #menubar .menu {
+	margin-bottom: 29px;
+}
+
+@media screen and (max-width:700px) {
+#content .sidebar #search {
+	display: none;
+}
+#content .sidebar {
+	float: none;
+	width: 100%;
+	height: auto;
+	overflow: auto;
+	padding-left: 12%;
+	padding-top: 0px;
+}
+#content .sidebar hr {
+	display: none;
+}
+#content {
+	position: relative;
+	top: -22px;
+	width: 100%;
+	overflow: hidden;
+}
+#menubar .menu h2 {
+	display: inline;
+	font-size: medium;
+	padding-right: 6%;
+}
+#menubar .menu ul {
+	display: inline;
+}
+#menubar .menu ul li {
+	display: inline;
+	font-size: medium;
+	padding-left: 0%;
+	padding-right: 3%;
+}
+.sidebar #menubar .menu ul .notimp {
+	display: none;
+}
+.sidebar #menubar .menu {
+	width: 100%;
+	text-align: center;
+	position: relative;
+	top: 16px;
+}
+#content .sidebar #menubar {
+	position: relative;
+	left: -7%;
+	overflow: hidden;
+	width: 95%;
+	padding-top: 0px;
+}
+#mainWrapper #offer p {
+	font-size: 16px;
+}
+
+.h2big {
+    font-size: 40px !important;
+}
+#mainWrapper #content .mainContent {
+	overflow: hidden;
+	width: 95%;
+	margin-top: 40px;
+}
+.productRow .productInfo .price {
+	font-size: 19px;
+}
+.productRow .productInfo .productContent {
+	font-size: 16px;
+}
+.productRow .productInfo .buyButton {
+	font-size: 15px;
+}
+
+header #headerLinks a {
+	padding-left: 0px;
+	padding-right: 30px;
+}
+#mainWrapper #offer {
+	padding-left: 22%;
+}
+
+@media screen and (max-width:480px) {
+#mainWrapper header #headerLinks {
+	width: 100%;
+	text-align: center;
+	padding-bottom: 21px;
+}
+#mainWrapper header #logo {
+	width: 100%;
+	text-align: center;
+}
+header #headerLinks a {
+	text-align: center;
+	padding-right: 15px;
+	padding-left: 0px;
+}
+#mainWrapper #offer {
+	padding-left: 0px;
+	text-align: center;
+}
+#content .sidebar #menubar {
+	position: relative;
+	left: -8%;
+	text-align: center;
+}
+#menubar .menu h2 {
+	width: 100%;
+	display: block;
+}
+.mainContent .productRow .productInfo {
+	width: 100%;
+	display: block;
+	padding-left: 0px;
+	padding-right: 0px;
+	position: relative;
+	left: -2%;
+}
+.menu ul {
+	position: relative;
+	padding-left: 24%;
+}
+
+#mainwrapper #content .mainContent {
+	margin-top: -81px;
+	text-align: center;
+	width: 100%;
+	padding-left: 0px;
+}

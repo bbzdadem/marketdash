@@ -1,0 +1,82 @@
+{% extends "bazarhome/layout.html" %}
+{% load static %}
+{% block body %}
+
+    <div class="container-fluid cabecera">
+        <section class="row justify-content-center">
+            <div class="logo-container col-12 mt-5 mb-5">
+                <img class="logo mt-4 mb-4" src="{% static '/bazarhome/img/logo_green.svg' %}" alt="">
+                <div>
+                    <span class="titulo-header"><span class="lima">Marketə</span> dair hərşey</span>
+                </div>
+                <div>
+                    <span class="subtitle">Sifariş etdiyindən sonra qapında</span>
+                </div>
+            </div>
+            <div class="row mb-5 flex-wrap justify-content-center">
+                <div class="categorias col-9 ">
+                    <div class="img-catergoria" href="#">
+                        <img class="iconos-categoria" src="{% static '/bazarhome/img/categories/bebidas.webp' %}" alt="">
+                        <div class="sub">İçkilər</div>
+                    </div>
+                    <div class="img-catergoria" href="#">
+                        <img class="iconos-categoria" src="{% static '/bazarhome/img/categories/comida.webp' %}" alt="">
+                        <div class="sub">Kompaniyalar</div>
+                    </div>
+                    <div class="img-catergoria" href="#">
+                        <img class="iconos-categoria" src="{% static '/bazarhome/img/categories/glovomania.webp' %}" alt="">
+                        <div class="sub">Ərzaq</div>
+                    </div>
+                    <div class="img-catergoria" href="#">
+                        <img class="iconos-categoria" src="{% static '/bazarhome/img/categories/mercados.webp' %}" alt="">
+                        <div class="sub">Market alışverişi</div>
+                    </div>
+                </div>
+                <div class="curva-amarilla">
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="container-fluid">
+        <section class="" style="width: 103%;display: block;margin-right: 0; margin-left:0; display: block;">
+            <div class="row contenedor">
+                <div class="position-absolute col-12" id="fondoAmarillo">
+                </div>
+                <div class="position-relative col-12" id="contenido">
+                    <div class="row" id="contenedor2">
+                        <div class="col" style="width: 50%; display: block">
+                            <img src="{% static 'bazarhome/img/cel.png' %}" alt="">
+                        </div>
+                    </div>
+                    <div class="col-6 titulo" id="derecha">
+                        <div class="titulo">Sifarişlərinizi</div>
+                        <div class="titulo"><span id="spanGlovo">BazarHome</span> ilə verin </div>
+                        <div class="descripcion">
+                            <div>
+                                Evdən çıxmadan sifarişlərinizi 
+                            </div>
+                            <div>
+                                qapınıza qədər gətirin.
+                            </div>
+                        </div>
+                        {% if not request.user.is_authenticated %}
+                        <div style="margin-left: 40px;">
+                            <a href="{% url 'register' %}" style="color: -webkit-link;cursor: pointer;">
+                                <img style="width: 35%;" src="{% static 'bazarhome/img/qeydiyyat.svg' %}" alt="">
+                            </a>
+                            <a href="{% url 'login' %}"
+                                style="margin-left: 15px;margin-left: 15px;color: -webkit-link;cursor: pointer;text-decoration: underline;">
+                                <img style="width: 35%;" src="{% static 'bazarhome/img/giris.svg' %}" alt="">
+                            </a>
+                        </div>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+    </div>
+    
+    </div>
+
+{% endblock %}

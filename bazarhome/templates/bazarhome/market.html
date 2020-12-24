@@ -1,0 +1,99 @@
+{% load static %}
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>BazarHome Market</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="{% static '/bazarhome/css/ecommerce.css' %}" rel="stylesheet" type="text/css">
+<link href="{% static '/bazarhome/css/shopping.css' %}" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+
+</head>
+
+<body>
+    <div id="mainWrapper">
+    <header> 
+        <div id="logo"> <img style="width: 100%;" src="{% static 'bazarhome/img/logo_green.png' %}" alt="sample logo"></div>
+        <button id="headerLinks" data-toggle="modal" data-target="#cart">
+          <a href="{% url 'sebet' user.user.email %}"  title="Sebet"><strong>({{user.shoppinglist.item.all.count}})</strong> Səbət</a><span class="total-count"></span>
+        </button>
+        
+        
+    </header>
+    <section id="offer"> 
+        <h2 class="h2big">Marketə dair hərşey</h2>
+        <p>Sifariş etdiyindən sonra qapında</p>
+        <h1>Xoş alışverişlər {{user.full_name}}</h1>
+        <a href="{% url 'logout' %}" style="background-color: transparent;"> Hesabdan cix  <i class="fas fa-sign-out-alt"></i></a>
+    </section>
+    <div id="content">
+        <section class="sidebar"> 
+        <input type="text"  id="search" placeholder="Axtar" onkeyup="search_food()" >
+        <div id="menubar">
+            <nav class="menu">
+            <h2>Kategoriyalar </h2>
+            <hr>
+            <ul>
+                <li><a href="/market" title="All">All</a></li>
+                {% for category in categories %}
+                <li><a href="/market?q={{category}}" title="{{category}}">{{category}}</a></li>
+                {% endfor %}
+            </ul>
+            </nav>
+            <nav class="menu">
+                <h2>Magazalar </h2>
+                <hr>
+                <ul>
+                {% for market in markets %}
+                <li><a href="/market?q={{market.supermarket_name}}" title="{{market.supermarket_name}}">{{market.supermarket_name}}</a></li>
+                {% endfor %}
+                </ul>
+            </nav>
+        </div>
+        </section>
+        <section class="mainContent">
+        <div class="productRow">
+            {% for product in products %}
+            <article class="productInfo" style="height: 300px;border:1px solid rgba(0,0,0,0.1);border-radius: 40px;">
+            <div style="width:100%"><img alt="sample" height="150" width="100%" src="{{product.image.url}}"></div>
+            <p class="productCategory" style="display: none;">{{product.catehory}} </p>
+            <p class="price">$50</p>
+            <p class="productContent" style="margin-bottom: 6px !important;">{{product.name}}</p>
+            <p class="productContent" style="font-size: 13px !important; margin-bottom: 30px !important; padding: none !important;"> {{product.description}} </p>
+            <a href="{% url 'addSebete' product.id %}" class="buyButton add-to-cart" style="text-decoration:none;border-radius: 10px;padding:10px 15px;">Səbətə at</a>
+            </article>
+            {% endfor %}
+        </div>        
+        </section>
+    </div>
+
+  <footer></footer>
+
+  <section>
+    
+  </section>
+  
+
+  <script>
+      function search_food() { 
+        let input = document.getElementById('search').value 
+        input=input.toLowerCase(); 
+        let x = document.getElementsByClassName('productInfo'); 
+        
+        for (i = 0; i <= x.length; i++) {  
+            if (!x[i].innerHTML.toLowerCase().includes(input)) { 
+                x[i].style.display="none"; 
+            } 
+            else { 
+                x[i].style.display="block";                  
+            } 
+        } 
+    } 
+  </script>
+
+
+</div>
+</body>
+</html>
+
